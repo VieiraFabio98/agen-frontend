@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "tailwindcss"; */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+html, body {
+  background-color: #fafafa;
+  color: #000000;
+}
+
+/* Dark mode global */
+html.my-app-dark,
+html.my-app-dark body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Ajuste para sidebar e conteúdo (opcional) */
+html.my-app-dark .sidebar {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+html.my-app-dark .content {
+  background-color: #181818;
+  color: #eaeaea;
+}
